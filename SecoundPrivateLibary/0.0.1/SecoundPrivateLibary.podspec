@@ -66,7 +66,7 @@ S
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
-  s.source       = { :git => "https://github.com/klaudiapaprika/SecoundPrivateLibary", :branch => "main",
+  s.source       = { :git => "https://github.com/klaudiapaprika/SecoundPrivateLibary", :branch => "master",
                    :tag => "#{spec.version}" }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
