@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint SecoundPrivatLibary.podspec' to ensure this is a
+#  Be sure to run `pod spec lint PrivateLibraryFirst.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -14,10 +14,10 @@ Pod::Spec.new do |spec|
   #  can feel like a chore to fill in it's definitely to your advantage. The
   #  summary should be tweet-length, and the description more in depth.
   #
-S
+
   spec.name         = "SecoundPrivateLibary"
   spec.version      = "0.0.1"
-  spec.summary      = "iOS traning material for framework development"
+  spec.summary      = "A short description of SecoundPrivateLibary."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -26,16 +26,22 @@ S
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
                    DESC
+
   spec.homepage     = "https://github.com/klaudiapaprika/SecoundPrivateLibary"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+
+
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Licensing your code is important. See https://choosealicense.com for more info.
   #  CocoaPods will detect a license file if there is a named LICENSE*
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
+
   spec.license      = "MIT (example)"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+
+
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the authors of the library, with email addresses. Email addresses
@@ -44,30 +50,38 @@ S
   #
   #  Specify a social_media_url where others can refer to, for example a twitter
   #  profile URL.
-  #s
-  spec.author             = { "Klaudia Paprika" => "kpaprika@gmail.com" }
+  #
+
+  spec.author             = { "Klaudia Paprika" => "klaudiapaprika@gmail.com" }
   # Or just: spec.author    = "Klaudia Paprika"
-  # spec.authors            = { "Klaudia Paprika" => "kpaprika@gmail.com" }
+  # spec.authors            = { "Klaudia Paprika" => "klaudiapaprika@gmail.com" }
   # spec.social_media_url   = "https://twitter.com/Klaudia Paprika"
+
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If this Pod runs only on iOS or OS X, then specify the platform and
   #  the deployment target. You can optionally include the target after the platform.
   #
+
   # spec.platform     = :ios
   # spec.platform     = :ios, "5.0"
+
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
+
+
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
+
   s.source       = { :git => "https://github.com/klaudiapaprika/SecoundPrivateLibary", :branch => "master",
                    :tag => "#{spec.version}" }
+
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -75,9 +89,13 @@ S
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
+
   spec.source_files  = "SecoundPrivateLibary", "SecoundPrivateLibary/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
+
   # spec.public_header_files = "Classes/**/*.h"
+
+
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
@@ -85,24 +103,35 @@ S
   #  You can preserve files from being cleaned, please don't preserve
   #  non-essential files like tests, examples and documentation.
   #
+
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
+
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
+
+
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
+
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
+
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
+
+
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If your library depends on compiler flags you can set them in the xcconfig hash
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
+
   # spec.requires_arc = true
+
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+
 end
